@@ -11,7 +11,7 @@ namespace QuanLyWinDowVaOffice.GUI
         private void Menu()
         {
 
-            Console.WriteLine("______________________________________________________________________________________________________");
+            Console.WriteLine("_______________________________________________________________________________________________________");
             Console.WriteLine("|                                 QUẢN LÝ KEY OFFICE & WINDOW                                         |");
             Console.WriteLine("|_____________________________________________________________________________________________________|");
             Console.WriteLine("|1. Nhập thêm key                                    |5. Tổng số lượng key                            |");
@@ -19,22 +19,47 @@ namespace QuanLyWinDowVaOffice.GUI
             Console.WriteLine("|3. Cập nhật thông tin                               |7. Tổng key hết kích hoạt                       |");
             Console.WriteLine("|4. Xóa key                                          |8. Hiện các thiết bị                            |");
             Console.WriteLine("|____________________________________________________|________________________________________________|");
-            Console.WriteLine("|                9. Hiện các thiết bị sử dụng bản quyền window                                        |");
-            Console.WriteLine("|                10. Hiện các thiết bị sử dụng bản quyền office                                        |");
-            Console.WriteLine("|                11. Hiện các thiết bị sử dụng bản quyền window & office                              |");
-            Console.WriteLine("|                0.Thoát                                                                              |");
+            Console.WriteLine("|                                                                                                     |");
+            Console.WriteLine("|                          9. Hiện các thiết bị sử dụng bản quyền window                              |");
+            Console.WriteLine("|                          10. Hiện các thiết bị sử dụng bản quyền office                             |");
+            Console.WriteLine("|                          11. Hiện các thiết bị sử dụng bản quyền window & office                    |");
+            Console.WriteLine("|                          0.Thoát                                                                    |");
             Console.WriteLine("|_____________________________________________________________________________________________________|");
+            Console.SetCursorPosition(30, 15);
+            Console.Write("Lựa chọn của bạn: ");
         }
 
         public void Run(QuanLyKhoa_BLL quanLyKhoa_BLL, KhoaBanQuyen_DAL khoaBanQuyen_DAL, TinhToan_BLL tinhToan_BLL, ArrayList khoaArrayList, QuanLyThietBi_BLL quanLyThietBi_BLL, ArrayList thietBiArrayList)
         {
-            Console.WriteLine("Nhập tài khoản(admin) ");
+            Console.Clear();
+            Console.SetCursorPosition(35, 2);
+            Console.Write("__________________________________________________________");
+            Console.SetCursorPosition(35, 3);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 4);
+            Console.Write("|                        ĐĂNG NHẬP                       |");
+            Console.SetCursorPosition(35, 5);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 6);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 7);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 8);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 9);
+            Console.Write("|                                                        |");
+            Console.SetCursorPosition(35, 10);
+            Console.Write("|________________________________________________________|");
+            Console.SetCursorPosition(40, 6);
+            Console.Write("TÊN TÀI KHOẢN (admin):");
             string tk = Console.ReadLine();
-            Console.WriteLine("Nhập mật khẩu(admin)");
+            Console.SetCursorPosition(40, 8);
+            Console.Write("MẬT KHẨU (admin):");
             string mk = Console.ReadLine();
             if (tk.Equals("admin") && mk.Equals("admin"))
             {
-                Console.WriteLine("Đăng nhập thành công");
+                Console.SetCursorPosition(45, 12);
+                Console.WriteLine("=>>> Đăng nhập thành công <<<=");
                 Console.ReadKey();
                 Console.Clear();
                 int chon;

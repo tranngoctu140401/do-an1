@@ -9,13 +9,23 @@ namespace QuanLyWinDowVaOffice.GUI
     class QuanLy_GUI
     {
         private void Menu()
-        {
-            Console.WriteLine("_______________________________________");
-            Console.WriteLine("|Tùy chọn                              |");
-            Console.WriteLine("|1. Admin                              |");
-            Console.WriteLine("|2. Người dùng                         |");
-            Console.WriteLine("|0. Thoát                              |");
-            Console.WriteLine("|______________________________________|");
+        {           
+            Console.SetCursorPosition(35, 2);
+            Console.WriteLine("______________________________________________________");
+            Console.SetCursorPosition(35, 3);
+            Console.WriteLine("|                    TÙY CHỌN                        |");
+            Console.SetCursorPosition(35, 4);
+            Console.WriteLine("|            _________________________               |");
+            Console.SetCursorPosition(35, 5);
+            Console.WriteLine("|              1. Admin                              |");
+            Console.SetCursorPosition(35, 6);
+            Console.WriteLine("|              2. Người dùng                         |");
+            Console.SetCursorPosition(35, 7);
+            Console.WriteLine("|              0. Thoát                              |");
+            Console.SetCursorPosition(35, 8);
+            Console.WriteLine("|____________________________________________________|");
+            Console.SetCursorPosition(40, 11);
+            Console.Write("Lựa chọn của bạn: ");
         }
         //QuanLyKhoa_BLL quanLyKhoa_BLL, KhoaBanQuyen_DAL khoaBanQuyen_DAL, TinhToan_BLL tinhToan_BLL, ArrayList khoaArrayList, QuanLyThietBi_BLL quanLyThietBi_BLL, ArrayList thietBiArrayList
         static Admin_GUI admin = new Admin_GUI();
@@ -46,7 +56,7 @@ namespace QuanLyWinDowVaOffice.GUI
                         admin.Run(quanLyKhoa_BLL, khoaBanQuyen_DAL, tinhToan_BLL, khoaArrayList, quanLyThietBi_BLL, thietBiArrayList);
                         break;
                     case 2:
-                        nguoiDung.Chon(taikhoan, thietBiArrayList, khoaArrayList);
+                        nguoiDung.Chon(taikhoan, thietBiArrayList, khoaArrayList);             
                         break;
                     default: break;
 

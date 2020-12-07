@@ -13,13 +13,23 @@ namespace QuanLyWinDowVaOffice.GUI
         static QuanLyNguoiDung_BLL quanlynguoidung = new QuanLyNguoiDung_BLL();
         private  void Menu()
         {
+            Console.Clear();
+            Console.SetCursorPosition(35, 2);
             Console.WriteLine("---------------------------------------------------");
+            Console.SetCursorPosition(35, 3);
             Console.WriteLine("|                  1.Đăng nhập                    |");
+            Console.SetCursorPosition(35, 4);
             Console.WriteLine("---------------------------------------------------");
+            Console.SetCursorPosition(35, 5);
             Console.WriteLine("|                  2.Đăng kí                      |");
+            Console.SetCursorPosition(35, 6);
             Console.WriteLine("---------------------------------------------------");
+            Console.SetCursorPosition(35, 7);
             Console.WriteLine("|                  0.Thoát                        |");
+            Console.SetCursorPosition(35, 8);
             Console.WriteLine("---------------------------------------------------");
+            Console.SetCursorPosition(40, 11);
+            Console.Write("Lựa chọn của bạn: ");
         }
         static NguoiDung user;
         static NguoiDung_DAL nguoidung = new NguoiDung_DAL();
@@ -35,6 +45,7 @@ namespace QuanLyWinDowVaOffice.GUI
                 if (chon == 0) break;
                 switch (chon)
                 {
+
                     case 1:
                         user = quanlynguoidung.DangNhap(taikhoan);
                         if (user != null)
