@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\QuanLyWinDowVaOffice-main\\QuanLyWinDowVaOffice-main\\QuanLyWinDowVaOffice.csproj",
+      "projectUniqueName": "C:\\Users\\trant\\Desktop\\do-an1\\QuanLyWinDowVaOffice.csproj",
       "projectName": "QuanLyWinDowVaOffice",
-      "projectPath": "D:\\QuanLyWinDowVaOffice-main\\QuanLyWinDowVaOffice-main\\QuanLyWinDowVaOffice.csproj",
+      "projectPath": "C:\\Users\\trant\\Desktop\\do-an1\\QuanLyWinDowVaOffice.csproj",
       "packagesPath": "C:\\Users\\trant\\.nuget\\packages\\",
-      "outputPath": "D:\\QuanLyWinDowVaOffice-main\\QuanLyWinDowVaOffice-main\\obj\\",
+      "outputPath": "C:\\Users\\trant\\Desktop\\do-an1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trant\\AppData\\Roaming\\NuGet\\NuGet.Config",

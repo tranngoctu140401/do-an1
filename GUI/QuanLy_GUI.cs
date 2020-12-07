@@ -10,22 +10,43 @@ namespace QuanLyWinDowVaOffice.GUI
     {
         private void Menu()
         {           
-            Console.SetCursorPosition(35, 2);
-            Console.WriteLine("______________________________________________________");
-            Console.SetCursorPosition(35, 3);
-            Console.WriteLine("|                    TÙY CHỌN                        |");
-            Console.SetCursorPosition(35, 4);
-            Console.WriteLine("|            _________________________               |");
-            Console.SetCursorPosition(35, 5);
-            Console.WriteLine("|              1. Admin                              |");
-            Console.SetCursorPosition(35, 6);
-            Console.WriteLine("|              2. Người dùng                         |");
-            Console.SetCursorPosition(35, 7);
-            Console.WriteLine("|              0. Thoát                              |");
-            Console.SetCursorPosition(35, 8);
-            Console.WriteLine("|____________________________________________________|");
-            Console.SetCursorPosition(40, 11);
+            Console.SetCursorPosition(32, 6);
+            Console.WriteLine("███████████████████████████████████████████████████████");
+            Console.SetCursorPosition(32, 7);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 8);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 9);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 10);
+            Console.WriteLine("██___________________________________________________██");
+            Console.SetCursorPosition(32, 11);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 12);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 13);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 14);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 15);
+            Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 16);
+            Console.WriteLine("███████████████████████████████████████████████████████");
+            Console.SetCursorPosition(55, 8);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("TÙY CHỌN");
+            Console.SetCursorPosition(50, 12);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("1. Admin");
+            Console.SetCursorPosition(50, 13);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("2. Người dùng");
+            Console.SetCursorPosition(50, 14);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("0. Thoát");
+            Console.SetCursorPosition(42, 19);
             Console.Write("Lựa chọn của bạn: ");
+            Console.ForegroundColor = ConsoleColor.White;
         }
         //QuanLyKhoa_BLL quanLyKhoa_BLL, KhoaBanQuyen_DAL khoaBanQuyen_DAL, TinhToan_BLL tinhToan_BLL, ArrayList khoaArrayList, QuanLyThietBi_BLL quanLyThietBi_BLL, ArrayList thietBiArrayList
         static Admin_GUI admin = new Admin_GUI();
