@@ -9,29 +9,18 @@ namespace QuanLyWinDowVaOffice.GUI
     class QuanLy_GUI
     {
         private void Menu()
-        {           
-            Console.SetCursorPosition(32, 6);
-            Console.WriteLine("███████████████████████████████████████████████████████");
-            Console.SetCursorPosition(32, 7);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 8);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 9);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 10);
-            Console.WriteLine("██___________________________________________________██");
-            Console.SetCursorPosition(32, 11);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 12);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 13);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 14);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 15);
-            Console.WriteLine("██                                                   ██");
-            Console.SetCursorPosition(32, 16);
-            Console.WriteLine("███████████████████████████████████████████████████████");
+        {
+            Console.SetCursorPosition(32, 6);  Console.WriteLine("███████████████████████████████████████████████████████");
+            Console.SetCursorPosition(32, 7);  Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 8);  Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 9);  Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 10); Console.WriteLine("██___________________________________________________██");
+            Console.SetCursorPosition(32, 11); Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 12); Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 13); Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 14); Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 15); Console.WriteLine("██                                                   ██");
+            Console.SetCursorPosition(32, 16); Console.WriteLine("███████████████████████████████████████████████████████");
             Console.SetCursorPosition(55, 8);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("TÙY CHỌN");

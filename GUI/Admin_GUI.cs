@@ -34,37 +34,28 @@ namespace QuanLyWinDowVaOffice.GUI
         public void Run(QuanLyKhoa_BLL quanLyKhoa_BLL, KhoaBanQuyen_DAL khoaBanQuyen_DAL, TinhToan_BLL tinhToan_BLL, ArrayList khoaArrayList, QuanLyThietBi_BLL quanLyThietBi_BLL, ArrayList thietBiArrayList)
         {
             Console.Clear();
-            Console.SetCursorPosition(35, 5);
-            Console.Write("████████████████████████████████████████████████████████████");
-            Console.SetCursorPosition(35, 6);
-            Console.Write("██                                                        ██");
-            Console.SetCursorPosition(35, 7);
-            Console.Write("██                                                        ██");
-            Console.SetCursorPosition(35, 8);
-            Console.Write("██                                                        ██");
-            Console.SetCursorPosition(35, 9);
-            Console.Write("██       TÀI KHOẢN (admin):                               ██");
-            Console.SetCursorPosition(35, 10);
-            Console.Write("██                                                        ██");
-            Console.SetCursorPosition(35, 11);
-            Console.Write("██       MẬT KHẨU (admin):                                ██");
-            Console.SetCursorPosition(35, 12);
-            Console.Write("██                                                        ██");
-            Console.SetCursorPosition(35, 13);
-            Console.Write("████████████████████████████████████████████████████████████");
-            Console.SetCursorPosition(60, 7);
+            Console.SetCursorPosition(30, 6);  Console.Write("████████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(30, 7);  Console.Write("██                                                        ██");
+            Console.SetCursorPosition(30, 8);  Console.Write("██                                                        ██");
+            Console.SetCursorPosition(30, 9);  Console.Write("██                                                        ██");
+            Console.SetCursorPosition(30, 10); Console.Write("██       TÀI KHOẢN (admin):                               ██");
+            Console.SetCursorPosition(30, 11); Console.Write("██                                                        ██");
+            Console.SetCursorPosition(30, 12); Console.Write("██       MẬT KHẨU (admin):                                ██");
+            Console.SetCursorPosition(30, 13); Console.Write("██                                                        ██");
+            Console.SetCursorPosition(30, 14); Console.Write("████████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(55, 8);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("ĐĂNG NHẬP");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.SetCursorPosition(62, 9);
+            Console.SetCursorPosition(57, 10);
             Console.Write("");
             string tk = Console.ReadLine();
-            Console.SetCursorPosition(61, 11);
+            Console.SetCursorPosition(56, 12);
             Console.Write("");
             string mk = Console.ReadLine();
             if (tk.Equals("admin") && mk.Equals("admin"))
             {
-                Console.SetCursorPosition(47, 15);
+                Console.SetCursorPosition(44, 16);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("=>>> Đăng nhập thành công <<<=");
                 Console.ForegroundColor = ConsoleColor.White;
@@ -82,7 +73,10 @@ namespace QuanLyWinDowVaOffice.GUI
                     switch (chon)
                     {
                         case 1:
-                            quanLyKhoa_BLL.Nhap(khoaArrayList);
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("MỖI KHÓA BẢN QUYỀN CÓ 25 KÝ TỰ ĐƯỢC VIẾT HOA GỒM CẢ SỐ VÀ CHỮ!!!");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            quanLyKhoa_BLL.Nhap(khoaArrayList);                           
                             khoaBanQuyen_DAL.GhiFile(khoaArrayList);
                             Console.ReadKey();
                             Console.Clear();
@@ -148,7 +142,7 @@ namespace QuanLyWinDowVaOffice.GUI
             }
             else
             {
-                Console.SetCursorPosition(47, 15);
+                Console.SetCursorPosition(41, 16);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("==> Đăng nhập không thành công <==");
                 Console.ForegroundColor = ConsoleColor.White;

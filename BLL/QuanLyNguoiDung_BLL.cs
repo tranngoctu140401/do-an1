@@ -67,7 +67,21 @@ namespace QuanLyWinDowVaOffice.BLL
             string tk;
             while (true)
             {
-                Console.WriteLine("Nhập tài khoản: ");
+                Console.SetCursorPosition(35, 5);  Console.Write("████████████████████████████████████████████████████████████");
+                Console.SetCursorPosition(35, 6);  Console.Write("██                                                        ██");
+                Console.SetCursorPosition(35, 7);  Console.Write("██                                                        ██");
+                Console.SetCursorPosition(35, 8);  Console.Write("██                                                        ██");
+                Console.SetCursorPosition(35, 9);  Console.Write("██       TÀI KHOẢN:                                       ██");
+                Console.SetCursorPosition(35, 10); Console.Write("██                                                        ██");
+                Console.SetCursorPosition(35, 11); Console.Write("██       MẬT KHẨU:                                        ██");
+                Console.SetCursorPosition(35, 12); Console.Write("██                                                        ██");
+                Console.SetCursorPosition(35, 13); Console.Write("████████████████████████████████████████████████████████████");
+                Console.SetCursorPosition(60, 7);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("ĐĂNG NHẬP");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.SetCursorPosition(54, 9);
+                Console.Write("");
                 tk = Console.ReadLine();
                 if (tk != "") break;
             }
@@ -78,6 +92,7 @@ namespace QuanLyWinDowVaOffice.BLL
             string tk;
             while (true)
             {
+                Console.SetCursorPosition(53, 15);
                 Console.WriteLine("Nhập tên thiết bị: ");
                 tk = Console.ReadLine();
                 if (tk != "") break;
@@ -89,7 +104,8 @@ namespace QuanLyWinDowVaOffice.BLL
             string pass;
             while (true)
             {
-                Console.WriteLine("Nhập mật khẩu: ");
+                Console.SetCursorPosition(53, 11);
+                Console.Write("");
                 pass = Console.ReadLine();
                 if (pass != "") break;
             }

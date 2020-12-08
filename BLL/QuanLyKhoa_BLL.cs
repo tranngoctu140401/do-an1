@@ -21,7 +21,7 @@ namespace QuanLyWinDowVaOffice.BLL
             KhoaBanQuyen result = null;
             foreach(KhoaBanQuyen khoaBanQuyen in arrayList)
             {
-                if (keyword.ToLower().Equals(khoaBanQuyen.Tenkhoa))
+                if (keyword.Equals(khoaBanQuyen.Makhoa))
                 {
                     result = khoaBanQuyen;
                 }

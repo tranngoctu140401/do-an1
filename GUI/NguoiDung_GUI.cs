@@ -14,32 +14,19 @@ namespace QuanLyWinDowVaOffice.GUI
         private  void Menu()
         {
             Console.Clear();
-            Console.SetCursorPosition(35, 6);
-            Console.WriteLine("████████████████████████████████████████████████████████");
-            Console.SetCursorPosition(35, 7);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 8);
-            Console.WriteLine("█                     1.Đăng nhập                      █");
-            Console.SetCursorPosition(35, 9);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 10);
-            Console.WriteLine("████████████████████████████████████████████████████████");
-            Console.SetCursorPosition(35, 11);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 12);
-            Console.WriteLine("█                     2.Đăng kí                        █");
-            Console.SetCursorPosition(35, 13);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 14);
-            Console.WriteLine("████████████████████████████████████████████████████████");
-            Console.SetCursorPosition(35, 15);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 16);
-            Console.WriteLine("█                     0.Thoát                          █");
-            Console.SetCursorPosition(35, 17);
-            Console.WriteLine("█                                                      █");
-            Console.SetCursorPosition(35, 18);
-            Console.WriteLine("████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(35, 6);  Console.WriteLine("████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(35, 7);  Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 8);  Console.WriteLine("█                     1.Đăng nhập                      █");
+            Console.SetCursorPosition(35, 9);  Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 10); Console.WriteLine("████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(35, 11); Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 12); Console.WriteLine("█                     2.Đăng kí                        █");
+            Console.SetCursorPosition(35, 13); Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 14); Console.WriteLine("████████████████████████████████████████████████████████");
+            Console.SetCursorPosition(35, 15); Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 16); Console.WriteLine("█                     0.Thoát                          █");
+            Console.SetCursorPosition(35, 17); Console.WriteLine("█                                                      █");
+            Console.SetCursorPosition(35, 18); Console.WriteLine("████████████████████████████████████████████████████████");
             Console.SetCursorPosition(40, 20);
             Console.Write("Lựa chọn của bạn: ");
         }
