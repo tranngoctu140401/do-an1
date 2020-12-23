@@ -38,19 +38,19 @@ namespace QuanLyWinDowVaOffice.GUI
             Console.SetCursorPosition(30, 7);  Console.Write("██                                                        ██");
             Console.SetCursorPosition(30, 8);  Console.Write("██                                                        ██");
             Console.SetCursorPosition(30, 9);  Console.Write("██                                                        ██");
-            Console.SetCursorPosition(30, 10); Console.Write("██       TÀI KHOẢN (admin):                               ██");
+            Console.SetCursorPosition(30, 10); Console.Write("██       TÀI KHOẢN :                                      ██");
             Console.SetCursorPosition(30, 11); Console.Write("██                                                        ██");
-            Console.SetCursorPosition(30, 12); Console.Write("██       MẬT KHẨU (admin):                                ██");
+            Console.SetCursorPosition(30, 12); Console.Write("██       MẬT KHẨU :                                       ██");
             Console.SetCursorPosition(30, 13); Console.Write("██                                                        ██");
             Console.SetCursorPosition(30, 14); Console.Write("████████████████████████████████████████████████████████████");
             Console.SetCursorPosition(55, 8);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("ĐĂNG NHẬP");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.SetCursorPosition(57, 10);
+            Console.SetCursorPosition(50, 10);
             Console.Write("");
             string tk = Console.ReadLine();
-            Console.SetCursorPosition(56, 12);
+            Console.SetCursorPosition(49, 12);
             Console.Write("");
             string mk = Console.ReadLine();
             if (tk.Equals("admin") && mk.Equals("admin"))
