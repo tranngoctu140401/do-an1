@@ -19,12 +19,12 @@ namespace QuanLyWinDowVaOffice.DAL
                 string line;
                 while((line = streamReader.ReadLine()) != null)
                 {
-                    string makhoa = line.Split("#")[0];
-                    string tenkhoa = line.Split("#")[1];
-                    string theloai = line.Split("#")[2];
-                    int soluotkichhoat = int.Parse(line.Split("#")[3]);
-                    string ngaynhap = line.Split("#")[4];
-                    string errorcode = line.Split("#")[5];
+                    string makhoa = line.Split("|")[0];
+                    string tenkhoa = line.Split("|")[1];
+                    string theloai = line.Split("|")[2];
+                    int soluotkichhoat = int.Parse(line.Split("|")[3]);
+                    string ngaynhap = line.Split("|")[4];
+                    string errorcode = line.Split("|")[5];
                     arrayList.Add(new KhoaBanQuyen(makhoa, tenkhoa, theloai, soluotkichhoat,ngaynhap,errorcode));
                 }
                 streamReader.Close();

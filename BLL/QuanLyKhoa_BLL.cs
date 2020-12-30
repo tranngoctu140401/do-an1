@@ -11,7 +11,7 @@ namespace QuanLyWinDowVaOffice.BLL
     {
         public void Display(KhoaBanQuyen khoaBanQuyen,ArrayList arrayList)
         {
-            Console.WriteLine("|{0,-5}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|{5,-10}|",arrayList.IndexOf(khoaBanQuyen),khoaBanQuyen.Makhoa,khoaBanQuyen.Tenkhoa,khoaBanQuyen.Soluotkichhoat,khoaBanQuyen.Ngaynhap,khoaBanQuyen.Errorcode);
+            Console.WriteLine("|{0,-5}|{1,-30}|{2,-15}|{3,-15}|{4,-10}|{5,-15}|{6,-10}|",arrayList.IndexOf(khoaBanQuyen),khoaBanQuyen.Makhoa,khoaBanQuyen.Tenkhoa,khoaBanQuyen.Theloai,khoaBanQuyen.Soluotkichhoat,khoaBanQuyen.Ngaynhap,khoaBanQuyen.Errorcode);
         }
         public KhoaBanQuyen Find(ArrayList arrayList)
         {
@@ -56,7 +56,8 @@ namespace QuanLyWinDowVaOffice.BLL
 
         public void Hien(ArrayList arrayList)
         {
-            Console.WriteLine("|{0,-5}|{1,-30}|{2,-20}|{3,-20}|{4,-20}|{5,-10}|","STT", "Mã khóa", "Tên khóa", "Số lượt","Ngày nhập","Error code");
+            Console.WriteLine("____________________________________________________________________________________________________________");
+            Console.WriteLine("|{0,-5}|{1,-30}|{2,-15}|{3,-15}|{4,-10}|{5,-15}|{6,-10}|","STT", "Mã khóa", "Tên khóa","Thể loại", "Số lượt","Ngày nhập","Error code");
             foreach(KhoaBanQuyen khoaBanQuyen in arrayList)
             {
                 Display(khoaBanQuyen, arrayList);

@@ -19,9 +19,9 @@ namespace QuanLyWinDowVaOffice.DAL
                 while ((line = streamReader.ReadLine()) != null)
                 {
 
-                    string tenthietbi = line.Split("#")[0];
+                    string tenthietbi = line.Split("|")[0];
 
-                    string makhoa = line.Split("#")[1];
+                    string makhoa = line.Split("|")[1];
 
                     arrayList.Add(new ThietBi(tenthietbi, makhoa));
                 }

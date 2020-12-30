@@ -13,12 +13,12 @@ namespace QuanLyWinDowVaOffice.GUI
             Console.Clear();
             Console.SetCursorPosition(9, 4);  Console.WriteLine("███████████████████████████████████████████████████████████████████████████████████████████████████████");
             Console.SetCursorPosition(9, 5);  Console.WriteLine("██                                                                                                   ██");
-            Console.SetCursorPosition(9, 6);  Console.WriteLine("██                                QUẢN LÝ KEY OFFICE & WINDOW                                        ██");
+            Console.SetCursorPosition(9, 6);  Console.WriteLine("██                                QUẢN LÝ BẢN QUYỀN OFFICE & WINDOWS                                 ██");
             Console.SetCursorPosition(9, 7);  Console.WriteLine("██___________________________________________________________________________________________________██");
-            Console.SetCursorPosition(9, 8);  Console.WriteLine("██ 1. Nhập thêm key                              | 5. Tổng số lượng key                              ██");
-            Console.SetCursorPosition(9, 9);  Console.WriteLine("██ 2. Hiện thị danh sách                         | 6. Tổng key còn lượt kích hoạt                    ██");
-            Console.SetCursorPosition(9, 10); Console.WriteLine("██ 3. Cập nhật thông tin                         | 7. Tổng key hết kích hoạt                         ██");
-            Console.SetCursorPosition(9, 11); Console.WriteLine("██ 4. Xóa key                                    | 8. Hiện các thiết bị                              ██");
+            Console.SetCursorPosition(9, 8);  Console.WriteLine("██ 1. Nhập khóa bản quyền                        | 5. Tổng số lượng khóa bản quyền                   ██");
+            Console.SetCursorPosition(9, 9);  Console.WriteLine("██ 2. Hiện thị danh sách khóa bản quyền          | 6. Tổng khóa bản quyền còn lượt kích hoạt         ██");
+            Console.SetCursorPosition(9, 10); Console.WriteLine("██ 3. Cập nhật thông tin                         | 7. Tổng khóa bản quyền hết lượt kích hoạt         ██");
+            Console.SetCursorPosition(9, 11); Console.WriteLine("██ 4. Xóa khóa bản quyền                         | 8. Hiện các thiết bị sử dụng bản quyền            ██");
             Console.SetCursorPosition(9, 12); Console.WriteLine("██_______________________________________________|___________________________________________________██");
             Console.SetCursorPosition(9, 13); Console.WriteLine("██                                                                                                   ██");
             Console.SetCursorPosition(9, 14); Console.WriteLine("██                         9. Hiện các thiết bị sử dụng bản quyền window                             ██");

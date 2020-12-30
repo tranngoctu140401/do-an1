@@ -20,7 +20,9 @@ namespace QuanLyWinDowVaOffice.BLL
                     {
                         if (key.Equals(khoaBanQuyen.Makhoa))
                         {
-                            Console.WriteLine("Nhập key thành công");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("ĐĂNG KÝ SỬ DỤNG KHÓA BẢN QUYỀN THÀNH CÔNG");
+                            Console.ForegroundColor = ConsoleColor.White;
                             thietBi.Madasudung = key;
                             khoaBanQuyen.Soluotkichhoat = khoaBanQuyen.Soluotkichhoat - 1;
                             kt = true;
@@ -30,7 +32,10 @@ namespace QuanLyWinDowVaOffice.BLL
 
             }
             ThietBi_DAL.GhiFile(thietBiArrayList);
-            if (kt == false) Console.WriteLine("Nhập  key không thành công");
+            if (kt == false)
+                Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("ĐĂNG KÝ SỬ DỤNG KHÓA BẢN QUYỀN KHÔNG THÀNH CÔNG");
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public void TaoTK(ArrayList list, ArrayList thietbis)
         {
@@ -92,9 +97,15 @@ namespace QuanLyWinDowVaOffice.BLL
             string tk;
             while (true)
             {
-                Console.SetCursorPosition(53, 15);
+                Console.SetCursorPosition(45, 15);
                 Console.WriteLine("Nhập tên thiết bị: ");
+                Console.SetCursorPosition(63, 15);
                 tk = Console.ReadLine();
+                Console.SetCursorPosition(50, 17);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("ĐĂNG KÝ TÀI KHOẢN THÀNH CÔNG!");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.ReadKey();
                 if (tk != "") break;
             }
             return tk;
