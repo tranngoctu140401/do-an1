@@ -49,10 +49,21 @@ namespace QuanLyWinDowVaOffice.GUI
                         user = quanlynguoidung.DangNhap(taikhoan);
                         if (user != null)
                         {
+                            Console.SetCursorPosition(53, 15);
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Đăng nhập thành công");
+                            Console.ForegroundColor = ConsoleColor.White;
                             Console.ReadKey();
                             Console.Clear();
-                            Console.WriteLine("Nhập key");
+                            Console.SetCursorPosition(40, 6);
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("HÃY NHẬP KHÓA BẢN QUYỀN BẠN MUỐN SỬ DỤNG!");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.SetCursorPosition(40, 7);  Console.WriteLine("_______________________________________________");
+                            Console.SetCursorPosition(40, 8);  Console.WriteLine("|");
+                            Console.SetCursorPosition(40, 9);  Console.WriteLine("|Nhập key:");
+                            Console.SetCursorPosition(40, 10); Console.WriteLine("|______________________________________________");
+                            Console.SetCursorPosition(50, 9);
                             string key = Console.ReadLine();
                             quanlynguoidung.NhapKey(thietbiArrayList, khoabanquyenArrayList, user,key);
                             Console.ReadKey();
@@ -60,7 +71,10 @@ namespace QuanLyWinDowVaOffice.GUI
                         }
                         else
                         {
+                            Console.SetCursorPosition(53, 15);
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Đăng nhập thất bại");
+                            Console.ForegroundColor = ConsoleColor.White;
                         }
                         Console.ReadKey();
                         Console.Clear();

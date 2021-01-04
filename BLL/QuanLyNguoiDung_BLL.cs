@@ -20,6 +20,7 @@ namespace QuanLyWinDowVaOffice.BLL
                     {
                         if (key.Equals(khoaBanQuyen.Makhoa))
                         {
+                            Console.SetCursorPosition(40, 12);
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("ĐĂNG KÝ SỬ DỤNG KHÓA BẢN QUYỀN THÀNH CÔNG");
                             Console.ForegroundColor = ConsoleColor.White;
@@ -33,9 +34,14 @@ namespace QuanLyWinDowVaOffice.BLL
             }
             ThietBi_DAL.GhiFile(thietBiArrayList);
             if (kt == false)
+            {
+                Console.SetCursorPosition(40, 12);
                 Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("ĐĂNG KÝ SỬ DỤNG KHÓA BẢN QUYỀN KHÔNG THÀNH CÔNG");
-            Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("ĐĂNG KÝ SỬ DỤNG KHÓA BẢN QUYỀN KHÔNG THÀNH CÔNG");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+                
+
         }
         public void TaoTK(ArrayList list, ArrayList thietbis)
         {

@@ -15,7 +15,7 @@ namespace QuanLyWinDowVaOffice.BLL
         }
         public void HienThietBi(ArrayList arrayList)
         {
-            Console.WriteLine("|{0,-20}|{1,-30}|", "Tên thiết bị", "Mã kích hoạt");
+            Console.WriteLine("|{0,-20}|{1,-30}|", "Tên thiết bị", "Khóa bản quyền sử dụng");
 
             foreach (ThietBi thietBi in arrayList)
             {
